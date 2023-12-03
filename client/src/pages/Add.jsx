@@ -26,13 +26,13 @@ const Add=()=>{
     }
     console.log(book)
     return(
-        <div>
+        <div className="form">
             <h1>Add New Book</h1>
             <input type="text" placeholder="title" onChange={handleChange} name="title"/>
             <input type="text" placeholder="description" onChange={handleChange} name="desc"/>
             <input type="text" placeholder="cover" onChange={handleChange} name="cover"/>
             <input type="number" placeholder="price" onChange={handleChange} name="price"/>
-            <button onClick={handleClick}>Add</button>
+            <button className="formButton" onClick={handleClick}>Add</button>
 
         </div>
     )
